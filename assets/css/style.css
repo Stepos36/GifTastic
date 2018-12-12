@@ -8,14 +8,31 @@
     width:100%
 }
 .main-container {
-    background-color: aquamarine;
+    background-color: rgba(117,0,18,0.6);
     margin-top:10px;
+    padding: 15px;
+    border: 6px ridge rgb(91,71,71);
+    border-radius: 15px;
+    max-height: 620px;
+    overflow: auto;
 }
 #input {
-    padding: 10px
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#input{
+    font-size: 20px;
+    color: white
 }
 .input-line {
     height:90%;
     margin-top:2px;
-    border-radius: 5px
+    border-radius: 5px;
+    display: inline-block
+}
+body {
+    background: url(https://lh5.googleusercontent.com/-mvpIxrtlkAA/Tndmi1sf6zI/AAAAAAAAD1E/I2vwpRqn1z8/s500/FlyEarth500_Micael_Reynaud.gif);
+    background-size: cover;
 }
