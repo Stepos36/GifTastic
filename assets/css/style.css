@@ -8,7 +8,11 @@
     width:100%
 }
 .main-container {
-    background-color: aquamarine
+    background-color: aquamarine;
+    margin-top:10px;
+}
+#input {
+    padding: 10px
 }
 .input-line {
     height:90%;
