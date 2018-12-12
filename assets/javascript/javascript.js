@@ -19,11 +19,10 @@ function displayGifs(){
     }).then(function(response) {
         var result = response.data
         for (var i=0;i<result.length;i++) {
-            var gifDiv = $('<div>')
             var gif = $('<img>');
-            gif.attr('src', result[i].images.fixed_width.url)
-            gifDiv.append(gif)
-            $('#gif-display').prepend(gifDiv)
+            gif.attr('src', result[i].images.fixed_height.url).attr('class', car).attr('style', 'margin: 5px 5px').css('border', '2px groove #560000')
+            $('#gif-display').prepend(gif)
+            
             console.log('gif')
         }
     });
@@ -31,15 +30,16 @@ function displayGifs(){
 
 
 $(document).ready(function() {
-renderButtons()
-$(document).on("click", ".car-btn", displayGifs)
-$(document).on('click', '#submitter', function(event) {
-    event.preventDefault();
-    var newCar = $('#car-input').val().trim()
-    cars.push(newCar)
     renderButtons()
-});
+    $(document).on("click", ".car-btn", displayGifs)
+    $(document).on('click', '#submitter', function(event) {
+        event.preventDefault();
+        var newCar = $('#car-input').val().trim()
+        cars.push(newCar)
+        renderButtons()
+        
+    });
 
 
-console.log('done')
+    console.log('done')
 });
