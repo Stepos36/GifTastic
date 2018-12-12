@@ -7,6 +7,7 @@ function renderButtons() {
         button.attr('data-name', cars[i]);
         button.text(cars[i]);
         $('#buttons').append(button);
+        $('.car-btn').css('margin', '5px 5px')
     }
 };
 function displayGifs(){
@@ -31,8 +32,14 @@ function displayGifs(){
 
 $(document).ready(function() {
 renderButtons()
-$('.car-btn').css('margin', '5px 5px')
 $(document).on("click", ".car-btn", displayGifs)
+$(document).on('click', '#submitter', function(event) {
+    event.preventDefault();
+    var newCar = $('#car-input').val().trim()
+    cars.push(newCar)
+    renderButtons()
+});
+
 
 console.log('done')
 });
