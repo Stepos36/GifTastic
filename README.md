@@ -12,7 +12,7 @@ a window on the page.
 * Create new tags and get more GIF's
 * Enjoy the Background
 
-##Typical workflow:
+## Typical workflow:
 ![Screenshot-gif](assets/images/readme.gif)
 
 _This website was created using following technologies:_
