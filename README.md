@@ -21,3 +21,5 @@ _This website was created using following technologies:_
 * **Bootstrap**
 * **JavaScript**
 * **JQuery**
+
+![footer](assets/images/footer.png)
